@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>SIGANN by SIGANN</title>
+    <title>SIGANN - home</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -14,24 +14,53 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>SIGANN</h1>
+      <header id="nav">
+		
+        <!--<h1><a href="index.html">SIGANN</a></h1>
         <p>ACL Special Interest Group for Annotation</p>
 
 
-        <p class="view"><a href="https://github.com/SIGANN">View My GitHub Profile</a></p>
+        <p class="view"><a href="https://github.com/SIGANN">SIGANN on GitHub</a></p>
+		<a href="https://aclweb.org/">
+		<img src="img/acl_logo.png" alt="Association for Computational Linguistics" style="border-radius: 50%; border: 2px solid black" width="100"/>
+		</a>
+		
+		<br/><br/>
+		<p class="view">The <b>Sixteenth Linguistics Annotation Workshop (LAW XVI)</b> will take place in Marseille, France in June, co-located with <a href="https://lrec2022.lrec-conf.org/">LREC 2022</a>. The special theme for the workshop is <i>New Frontiers and Paradigms in Linguistic Annotation</i>. Stay tuned for the call for papers!</p>
+		
+		<a href="https://lrec2022.lrec-conf.org/">
+		<img src="img/lrec2022.png" style="border-radius: 25%; border: 2px solid black" width="150">
+		</a>-->
+     </header>
+	 <script>
+		fetch("./nav.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("#nav").innerHTML = data;
+  });
+  </script>
+ <section>
+        <p><b>SIGANN</b> is a Special Interest Group of the <a href="https://aclweb.org">Association for Computational Linguistics</a> for researchers concerned with all aspects of linguistic annotation of language resources. Its activities include:</p>
+        
+        <ul>
+            <li>The exchange and propagation of research results with respect to the annotation, manipulation and exploitation of annotated language resources, taking into account different applications and theoretical investigations in the field of language technology and research;</li>
+            <li>Working towards harmonization and interoperability of linguistic annotations from the perspective of the increasingly large number of tools and frameworks that support the creation, instantiation, manipulation, and exploitation of annotated resources;</li>
+            <li>Working towards consensus on all issues critical to the advancement of the field of language resource annotation;</li>
+            <li>Sponsorship of the annual <b>Linguistic Annotation Workshop</b>.</li>
+        </ul>
 
-      </header>
+<a href="officers.html">SIGANN Officers</a> | <a href="SIGANN-constitution.txt">Constitution</a> | <a href="join.html">Joining</a>  | <a href="shared-corpus.html">Shared Corpus</a>
+
+</section>
       <section>
-        <h2>
-<a id="sigann-homepage" class="anchor" href="#sigann-homepage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="http://www.cs.vassar.edu/sigann/">SIGANN homepage</a>
-</h2>
-
 <h2>
-<a id="linguistic-annotation-workshop-sites" class="anchor" href="#linguistic-annotation-workshop-sites" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linguistic Annotation Workshop sites</h2>
+<a id="linguistic-annotation-workshop-sites" class="anchor" href="#linguistic-annotation-workshop-sites" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Past Linguistic Annotation Workshop sites</h2>
 
 <ul>
-<li><strong><a href="https://sigann.github.io/LAW-XIV-2020/">LAW XIV 2020</a></strong></li>
+<li><a href="https://sigann.github.io/LAW-DMR-2021/">LAW XV-DMR III 2021</a></li>
+<li><a href="https://sigann.github.io/LAW-XIV-2020/">LAW XIV 2020</a></li>
 <li><a href="https://sigann.github.io/LAW-XIII-2019/">LAW XIII 2019</a></li>
 <li><a href="http://multiword.sourceforge.net/lawmwecxg2018/">LAW-MWE-CxG 2018</a> (at COLING, Santa Fe, NM)</li>
 <li><a href="https://sigann.github.io/LAW-XI-2017/">LAW XI 2017</a> (at EACL, Valencia, Spain)</li>
