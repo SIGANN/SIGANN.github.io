@@ -14,23 +14,17 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1><a href="index.html">SIGANN</a></h1>
-        <p>ACL Special Interest Group for Annotation</p>
-
-
-        <p class="view"><a href="https://github.com/SIGANN">SIGANN on GitHub</a></p>
-		<a href="https://aclweb.org/">
-		<img src="img/acl_logo.png" alt="Association for Computational Linguistics" style="border-radius: 50%; border: 2px solid black" width="100"/>
-		</a>
-		
-		<br/><br/>
-		<p class="view">The <b>Sixteenth Linguistics Annotation Workshop (LAW XVI)</b> will take place in Marseille, France in June, co-located with <a href="https://lrec2022.lrec-conf.org/">LREC 2022</a>. The special theme for the workshop is <i>New Frontiers and Paradigms in Linguistic Annotation</i>. Stay tuned for the call for papers!</p>
-		
-		<a href="https://lrec2022.lrec-conf.org/">
-		<img src="img/lrec2022.png" style="border-radius: 25%; border: 2px solid black" width="150">
-		</a>
+      <header id="nav">
      </header>
+     <script>
+        fetch("./nav.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("#nav").innerHTML = data;
+  });
+  </script>
  <section>
  <h2>SIGANN Officers</h2>
  <table>
